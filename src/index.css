@@ -1,0 +1,23 @@
+/* Prevent FOUC */
+html {
+  visibility: visible;
+  opacity: 1;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  body {
+    background: white;
+  }
+  
+  .print\:hidden {
+    display: none;
+  }
+  
+  .print\:p-8 {
+    padding: 2rem;
+  }
+}
